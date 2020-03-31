@@ -1,0 +1,68 @@
+1. Classify the following attributes as binary, discrete, or continuous. Also classify them as qualitative (nominal or ordinal) or quantitative (interval or ratio). Some cases may have more than one interpretation, so briefly indicate your reasoning if you think there may be some ambiguity. 
+
+Example: Age in years. Answer: Discrete, quantitative, ratio 
+a. Number of students in a school.
+b. Ability to pass light in terms of the following values: opaque, translucent' transparent. 
+c. School rank based on US News. 
+d. Distance from the center of campus. 
+e. Density of a substance in grams per cubic centimeter. 
+f. Time in terms of AM or PM. 
+g. Angles as measured in degrees between 0 and 360. 
+h. Bronze, Silver, and Gold medals as awarded at the Olympics. 
+i. Height above sea level. 
+j. Age in years
+Answer:
+    a: Continuous, Ratio
+    b: Discrete, Ordinal
+    c: Discrete, Ordinal
+    d: Continuous, Ratio
+    e: Continuous, Ratio
+    f: Continuous, Ratio
+    g: Continuous, Ratio
+    h: Discrete, Ordinal
+    i: Continuous, Ratio
+    j: Discrete, Nominal
+
+
+2. Many sciences rely on observation instead of (or in addition to) designed experiments. Compare the data quality issues involved in observational science with those of experimental science and data mining. 
+
+Answer:
+    One data quality issue observational scientist will run into is maybe the type of observational data is mostly qualitative instead of quantitative, so they cannot run that many statistical analysis tools like getting the mean, range, etc.
+    Another hurdler observational scientist may run into getting duplicate data. If more than one scientist is observing a phenomenon, then when it comes to comparing data you will have duplicates and also some ambiguity
+
+
+
+3. Distinguish between noise and outliers. Be sure to consider the following questions.
+
+a) Is noise ever interesting or desirable? How about outliers?
+b) Can noise objects be outliers?
+c) Are noise objects always outliers?
+d) Are outliers always noise objects?
+e) Can noise make a typical value into an unusual one, or vice versa?
+Answer:
+    An outlier is simply data which does not “fit in” with the other data that you are analyzing. Whether or not it is a member of the group (distribution, class, model) is immaterial.
+    An outlier can be a valid data point, or it can be noise. Noise is something that is just plain wrong or invalid, such as nan and is wrong and should be removed in the data cleaning stage.
+
+4. This question compares and contrasts some similarity and distance measures. 
+(a) For binary data, the Ll distance corresponds to the Hamming distance; that is, the number of bits that are different between two binary vectors. The Jaccard similarity is a measure of the similarity between two binary vectors. Compute the Hamming distance and the Jaccard similarity between the following two binary vectors. 
+x: 0101010001 
+y: 0100011000
+Answer:
+    Hamming Distance of given binary data: 10
+    Jaccard similarity: 1.0
+
+
+(b) Suppose that you are comparing how similar two organisms of different species are in terms of the number of genes they share. Describe which measure, Hamming or Jaccard, you think would be more appropriate for comparing the genetic makeup of two organisms. Explain. (Assume that each animal is represented as a binary vector, where each attribute is 1 if a particular gene is present in the organism and 0 otherwise.)
+Answer:
+    In this case, it would be better to use the Jaccard Coefficent. The only genes that we care about are the genes that are the same. Genes that are not the same in either organism does not support that that two organisms are similar.
+
+
+
+
+(c) If you wanted to compare the genetic makeup of two organisms of the same species, e.g., two human beings, would you use the Hamming distance, the Jaccard coefficient, or a different measure of similarity or distance? Explain. (Note that two human beings share > 99.9% of the same genes.)
+Answer:
+    In this case, you would want to use the Hamming Distance. Hamming distance only looks at genes that are not alike, and since two humans share 99.9% of the same genes, those genes that are not alike are important
+
+
+
+5. Please do some preprocessing for missing data of the attached dataset. 

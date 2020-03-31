@@ -1,0 +1,19 @@
+Lab 2
+
+Objective
+
+Sometimes missing data can mess up an analysis; there are several strategies for dealing with missing data depending on certain circumstances. Let's take a look at the attached "Diabetes related data"
+
+1. look at the dataset
+2. mark missing values
+3. missing values causes problems
+4. remove rows with missing values
+5. impute missing values
+6. algorithms that support missing values
+
+Tasks
+
+First, let’s work on a data preprocessing problem together.
+Second, you can work on your homework 2. 
+
+

@@ -1,0 +1,54 @@
+Logistic Regression Statistical Information:
+--------------------------------------
+
+Readmitted [0] vs. Not-Readmitted [1]
+0    54635
+1     5071
+Name: readmitted, dtype: int64
+
+Original data set shape Counter({0: 43711, 1: 4053})
+New data set shape Counter({0: 43711, 1: 43711})
+
+Accuracy is 0.61
+Precision is 0.63
+Recall is 0.56
+
+
+Decision Tree Statistical Information:
+--------------------------------------
+Readmitted [0] vs. Not-Readmitted [1]
+0    54635
+1     5071
+Name: readmitted, dtype: int64
+
+Original data set shape Counter({0: 54635, 1: 5071})
+New data set shape Counter({0: 54635, 1: 54635})
+
+Accuracy is 0.92
+Precision is 0.93
+Recall is 0.90
+
+Most Important Features Calculated to Use For Decision Tree:
+------------------------------------------------------------
+                       Feature  Importance
+8                    metformin    0.022047
+19                     insulin    0.023032
+26                    gender_1    0.023321
+0                          age    0.026617
+40            level1_diag1_1.0    0.029823
+2               num_procedures    0.043233
+3              num_medications    0.048712
+7             number_diagnoses    0.077005
+29  discharge_disposition_id_2    0.106145
+1             time_in_hospital    0.413260
+
+
+Random Forest Statistical Information:
+--------------------------------------
+
+Original dataset shape Counter({0: 54635, 1: 5071})
+New dataset shape Counter({0: 54635, 1: 54635})
+
+Accuracy is 0.94
+Precision is 0.99
+Recall is 0.90
